@@ -18,7 +18,7 @@ API = 'https://single-developers.up.railway.app/tiktok?url='
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 # TikTok Video URL Types , You Can Add More to This :)
-TikTok_Link_Types= ['https://m.tiktok.com','https://vt.tiktok.com','https://tiktok.com','https://www.tiktok.com']
+TikTok_Link_Types= ['https://m.tiktok.com','https://vm.tiktok.com','https://tiktok.com','https://www.tiktok.com']
 
 # ParseMode Type For All Messages
 _ParseMode=ParseMode.MARKDOWN
@@ -31,18 +31,18 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
 
 def start_handler(update, context):
-    update.message.reply_sticker('https://t.me/STM_Developers/194')
-    update.message.reply_text('Hey There! i am simple tiktok downloder Bot in Telegram\n\n🔗 Send any TikTok link to this BOT\n\n👻𝚂𝚃𝙼 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌️',parse_mode=_ParseMode)
+    update.message.reply_sticker('https://t.me/sl_new_bots_tm/4000')
+    update.message.reply_text('Hey There! i am simple tiktok downloder Bot❤️ in Telegram🇱🇰\n\n🙏 Send any TikTok link to this BOT\n\n🇱🇰SL new bots 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜🇱🇰',parse_mode=_ParseMode)
 
 def about_handler(update, context):
-    update.message.reply_sticker('https://t.me/slbotzone/206273')
-    update.message.reply_text('Hey There! I am simple tiktok video downloader bot in telegram\n\n`My Owner Is` :- @NidushaAmarasinghe',parse_mode=_ParseMode)
+    update.message.reply_sticker('https://t.me/sl_new_bots_tm/4005')
+    update.message.reply_text('Hey There! I am simple tiktok video❤️ downloader bot🇱🇰 in telegram\n\n`My Owner Is🇱🇰` :- @aboutchathura',parse_mode=_ParseMode)
     
 def devs_handler(update, context):
-    update.message.reply_text('`Owner` :- @NidushaAmarasinghe\n\n`Founder` :- @MalithRukshan\n\n`Dev` :- @STM_Developers',parse_mode=_ParseMode)
+    update.message.reply_text('`Owner🇱🇰` :- @aboutchathura\n\n`Founder` :- @sl_new_bots_tm\n\n`Dev` :-@sl_new_bots_tm ',parse_mode=_ParseMode)
 
 def help_handler(update, context):
-    update.message.reply_text('🔗 Send any TikTok link to this BOT, then,\n🚀 This bot will Download and Send that TikTok Video for You.\n\n🔑 BOT Commands : /start , /about , /devs , /help',parse_mode=_ParseMode)
+    update.message.reply_text('🔗 Send any TikTok link to this BOT, then,\n🚀 This bot will Download and Send that TikTok Video for You.\n\n😃 BOT Commands : /start , /about , /devs , /help',parse_mode=_ParseMode)
   
 
 # ◇─────────────────────────────────────────────────────────────────────────────────────◇
@@ -54,8 +54,8 @@ def Download_Video(Link,update, context):
     no_watermark=None
     watermark=None
 
-    status_msg=message.reply_text('🚀 DOᗯᑎᒪOᗩᗪIᑎG Video TO Sᕮᖇᐯᕮᖇ ....')
-    status_sticker=message.reply_sticker('https://t.me/slbotzone/206254')
+    status_msg=message.reply_text('💥💢 DOᗯᑎᒪOᗩᗪIᑎG Video TO Sᕮᖇᐯᕮᖇ 💥💢....')
+    status_sticker=message.reply_sticker('https://t.me/sl_new_bots_tm/4018')
 
     # Getting Download Links Using API
     try:
@@ -65,19 +65,19 @@ def Download_Video(Link,update, context):
        print('Download Links Generated \n\n\n'+str(req)+'\n\n\n')
     except:
         print('Download Links Generate Error !!!')
-        status_msg.edit_text('⁉️ TikTok Downloader API Error !!! Report To Developer : @STM_Developers')
+        status_msg.edit_text('❓️❔️❗️ TikTok Downloader API Error !!! Report To Developer : @sl_new_bots_tm')
         status_sticker.delete()
         return
     
     caption_text="""◇───────────────◇
 ✅ Successfully Downloaded {} Video 🔰
-🔰 Powerd by : [🏖 TikTok Download Bot 🏖](https://github.com/STM-Developers/TikTok-Download-Bot/)
-[👻𝚂𝚃𝙼 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌️ ](https://t.me/STM_Developers)
+🔰 Powerd by : [🏖 TikTok Download Bot 🏖](https://t.me/sl_new_bots_tm/)
+[👨‍🎓owner🇱🇰 ](https://t.me/aboutchathura)
 ◇───────────────◇"""
     
     # Uploading Downloaded Videos to Telegram
     print('Uploading Videos')
-    status_msg.edit_text('☘️ 𝚄𝚙𝚕𝚘𝚊𝚍𝚒𝚗𝚐 𝚝𝚘 𝚃𝚎𝚕𝚎𝚐𝚛𝚊𝚖....')
+    status_msg.edit_text('📤 𝚄𝚙𝚕𝚘𝚊𝚍𝚒𝚗𝚐 𝚝𝚘 𝚃𝚎𝚕𝚎𝚐𝚛𝚊𝚖❤️❤️....')
     message.reply_video(video=no_watermark,supports_streaming=True,caption=caption_text.format('No Watermark'),parse_mode=_ParseMode)
     message.reply_video(video=watermark,supports_streaming=True,caption=caption_text.format('Watermark'),parse_mode=_ParseMode)
 
