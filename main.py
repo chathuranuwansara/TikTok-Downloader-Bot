@@ -54,7 +54,7 @@ def Download_Video(Link,update, context):
     no_watermark=None
     watermark=None
 
-    status_msg=message.reply_text('💥💢DOᗯᑎᒪOᗩᗪIᑎG Video TO Sᕮᖇᐯᕮᖇ 💢💥....')
+    status_msg=message.reply_text('💥💢📥DOᗯᑎᒪOᗩᗪIᑎG Video TO Sᕮᖇᐯᕮᖇ📥 💢💥....')
     status_sticker=message.reply_sticker('https://t.me/sl_new_bots_tm/4018')
 
     # Getting Download Links Using API
@@ -72,12 +72,12 @@ def Download_Video(Link,update, context):
     caption_text="""◇───────────────◇
 ✅ Successfully Downloaded {} Video 🔰
 🔰 Powerd by : [🏖 TikTok Download Bot 🏖](http://t.me/sltiktok_downloder_bot/)
-[👻𝚂𝚃𝙼 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌️ ](https://t.me/sl_new_bots_tm)
+[🇱🇰sl new bot 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌❤️🇱🇰 ](https://t.me/sl_new_bots_tm)
 ◇───────────────◇"""
     
     # Uploading Downloaded Videos to Telegram
     print('Uploading Videos')
-    status_msg.edit_text('📤 ❤️𝚄𝚙𝚕𝚘𝚊𝚍𝚒𝚗𝚐 𝚝𝚘 𝚃𝚎𝚕𝚎𝚐𝚛𝚊𝚖..❤️.💢.')
+    status_msg.edit_text('📤 ❤️𝚄𝚙𝚕𝚘𝚊𝚍𝚒𝚗𝚐 𝚝𝚘 𝚃𝚎𝚕𝚎𝚐𝚛𝚊𝚖..❤️.💢.📤')
     message.reply_video(video=no_watermark,supports_streaming=True,caption=caption_text.format('No Watermark'),parse_mode=_ParseMode)
     message.reply_video(video=watermark,supports_streaming=True,caption=caption_text.format('Watermark'),parse_mode=_ParseMode)
 
