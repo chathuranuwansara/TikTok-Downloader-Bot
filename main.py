@@ -69,11 +69,11 @@ def Download_Video(Link,update, context):
         status_sticker.delete()
         return
     
-    caption_text="""◇───────────────◇
+    caption_text="""◇─────༒︎༒︎༒︎༒︎༒︎──────────◇
 ✅ Successfully Downloaded {} Video 🔰
 🔰 Powerd by : [🏖 TikTok Download Bot 🏖](http://t.me/sltiktok_downloder_bot/)
 [🇱🇰sl new bot 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌❤️🇱🇰 ](https://t.me/sl_new_bots_tm)
-◇───────────────◇"""
+◇────────༒︎༒︎༒︎༒︎༒︎───────◇"""
     
     # Uploading Downloaded Videos to Telegram
     print('Uploading Videos')
