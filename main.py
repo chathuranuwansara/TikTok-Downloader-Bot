@@ -32,14 +32,14 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 def start_handler(update, context):
     update.message.reply_sticker('https://t.me/sl_new_bots_tm/4000')
-    update.message.reply_text('Hey There! i am simple tiktok downloder Bot❤️ in Telegram\n\n💢 Send any TikTok link to this BOT\n\n🇱🇰SL NEW BOTS 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌️',parse_mode=_ParseMode)
+    update.message.reply_text('Hey There! i am simple tiktok downloder Bot❤️ in Telegram\n\n💢 Send any TikTok link to this BOT\n\n🇱🇰SL UNIC BOTS 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛𝚜✌️',parse_mode=_ParseMode)
 
 def about_handler(update, context):
     update.message.reply_sticker('https://t.me/sl_new_bots_tm/4005')
     update.message.reply_text('Hey There! I am simple tiktok video downloader bot❤️ in telegram\n\n`My Owner Is🇱🇰` :- @aboutchathura',parse_mode=_ParseMode)
     
 def devs_handler(update, context):
-    update.message.reply_text('`Owner🇱🇰` :- @aboutchathura\n\n`Founder🇱🇰` :- @sltiktok_downloder_bot\n\n`Dev` :- @sl_new_bots_tm',parse_mode=_ParseMode)
+    update.message.reply_text('`Owner🇱🇰` :- @aboutchathura\n\n`Founder🇱🇰` :- @sltiktok_downloder_bot\n\n`Dev` :- @UNIC_OFFICIAL_BOTS',parse_mode=_ParseMode)
 
 def help_handler(update, context):
     update.message.reply_text('🔗 Send any TikTok link to this BOT, then,\n🚀 This bot will Download and Send that TikTok Video for You.\n\n😃 BOT Commands : /start , /about , /devs , /help',parse_mode=_ParseMode)
@@ -65,7 +65,7 @@ def Download_Video(Link,update, context):
        print('Download Links Generated \n\n\n'+str(req)+'\n\n\n')
     except:
         print('Download Links Generate Error !!!')
-        status_msg.edit_text('⁉️ TikTok Downloader API Error !!! Report To Developer : @sl_new_bots_tm')
+        status_msg.edit_text('⁉️ TikTok Downloader API Error !!! Report To Developer : @UNIC_OFFICIAL_BOTS')
         status_sticker.delete()
         return
     
